@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{932D83A9-E857-48D6-95D4-743662641494}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Şirket_Otomasyonu</RootNamespace>
+    <AssemblyName>Şirket Otomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Avukat.cs" />
+    <Compile Include="AvukatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvukatForm.Designer.cs">
+      <DependentUpon>AvukatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvukatGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvukatGoruntule.Designer.cs">
+      <DependentUpon>AvukatGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvukatIslemler.cs" />
+    <Compile Include="Baglanti.cs" />
+    <Compile Include="GuvenlikPersonel.cs" />
+    <Compile Include="GuvenlikPersonelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuvenlikPersonelForm.Designer.cs">
+      <DependentUpon>GuvenlikPersonelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuvenlikPersonelGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuvenlikPersonelGoruntule.Designer.cs">
+      <DependentUpon>GuvenlikPersonelGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuvenlikPersonelIslemler.cs" />
+    <Compile Include="IdariPersonelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdariPersonelForm.Designer.cs">
+      <DependentUpon>IdariPersonelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdariPersonelGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdariPersonelGoruntule.Designer.cs">
+      <DependentUpon>IdariPersonelGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdariPersonelIslemler.cs" />
+    <Compile Include="IsciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsciForm.Designer.cs">
+      <DependentUpon>IsciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsciGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsciGoruntule.Designer.cs">
+      <DependentUpon>IsciGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsciIslemler.cs" />
+    <Compile Include="Kullanici.cs" />
+    <Compile Include="KullaniciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkle.Designer.cs">
+      <DependentUpon>KullaniciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciForm.Designer.cs">
+      <DependentUpon>KullaniciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciIslemler.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdariPersonel.cs" />
+    <Compile Include="Isci.cs" />
+    <Compile Include="Kisi.cs" />
+    <Compile Include="Memur.cs" />
+    <Compile Include="MemurForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemurForm.Designer.cs">
+      <DependentUpon>MemurForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemurGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemurGoruntule.Designer.cs">
+      <DependentUpon>MemurGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemurIslemler.cs" />
+    <Compile Include="Muhendis.cs" />
+    <Compile Include="MuhendisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuhendisForm.Designer.cs">
+      <DependentUpon>MuhendisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuhendisGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuhendisGoruntule.Designer.cs">
+      <DependentUpon>MuhendisGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuhendisIslemler.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SirketKisi.cs" />
+    <Compile Include="Site.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Site.Designer.cs">
+      <DependentUpon>Site.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stajyer.cs" />
+    <Compile Include="StajyerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StajyerForm.Designer.cs">
+      <DependentUpon>StajyerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StajyerGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StajyerGoruntule.Designer.cs">
+      <DependentUpon>StajyerGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StajyerIslemler.cs" />
+    <Compile Include="Tanıtım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanıtım.Designer.cs">
+      <DependentUpon>Tanıtım.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvukatForm.resx">
+      <DependentUpon>AvukatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvukatGoruntule.resx">
+      <DependentUpon>AvukatGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuvenlikPersonelForm.resx">
+      <DependentUpon>GuvenlikPersonelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuvenlikPersonelGoruntule.resx">
+      <DependentUpon>GuvenlikPersonelGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdariPersonelForm.resx">
+      <DependentUpon>IdariPersonelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdariPersonelGoruntule.resx">
+      <DependentUpon>IdariPersonelGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsciForm.resx">
+      <DependentUpon>IsciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsciGoruntule.resx">
+      <DependentUpon>IsciGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkle.resx">
+      <DependentUpon>KullaniciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciForm.resx">
+      <DependentUpon>KullaniciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemurForm.resx">
+      <DependentUpon>MemurForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemurGoruntule.resx">
+      <DependentUpon>MemurGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuhendisForm.resx">
+      <DependentUpon>MuhendisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuhendisGoruntule.resx">
+      <DependentUpon>MuhendisGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Site.resx">
+      <DependentUpon>Site.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StajyerForm.resx">
+      <DependentUpon>StajyerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StajyerGoruntule.resx">
+      <DependentUpon>StajyerGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanıtım.resx">
+      <DependentUpon>Tanıtım.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
